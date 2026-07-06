@@ -1,0 +1,37 @@
+{
+    "modelo": "CNN-RNN_mejorado_9",
+    "entrada": "20x9",
+    "datos": {
+        "X": "dato_expandido.csv",
+        "Y": "salida_expandido.csv"
+    },
+    "split": {
+        "test_size": 0.2,
+        "val_size_from_trainval": 0.2,
+        "seed": 50
+    },
+    "arquitectura": [
+        "Conv1D(96, kernel_size=3, relu, same)",
+        "BatchNormalization",
+        "Dropout(0.15)",
+        "Conv1D(64, kernel_size=3, relu, same)",
+        "BatchNormalization",
+        "MaxPooling1D(pool_size=2)",
+        "Dropout(0.15)",
+        "SimpleRNN(110, dropout=0.10, recurrent_dropout=0.05)",
+        "Dense(100, relu)",
+        "Dropout(0.20)",
+        "Dense(50, relu)",
+        "Dropout(0.10)",
+        "Dense(3, softmax)"
+    ],
+    "loss": "categorical_crossentropy",
+    "optimizer": "Adam",
+    "learning_rate": 0.0007,
+    "batch_size": 24,
+    "epochs": 180,
+    "early_stopping": true,
+    "patience_early_stopping": 20,
+    "monitor_early_stopping": "val_loss",
+    "restore_best_weights": true
+}

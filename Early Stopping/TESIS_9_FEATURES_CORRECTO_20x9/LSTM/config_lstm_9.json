@@ -1,0 +1,30 @@
+{
+    "modelo": "LSTM 9 caracteristicas",
+    "datos": {
+        "X": "dato_expandido.csv",
+        "Y": "salida_expandido.csv",
+        "features": 9,
+        "timesteps": 20
+    },
+    "split": {
+        "test_size": 0.2,
+        "val_size_from_trainval": 0.2,
+        "seed": 50
+    },
+    "salida": "softmax para tres clases excluyentes",
+    "loss": "categorical_crossentropy en redes neuronales",
+    "arquitectura": "LSTM(250) + LSTM(200) + Dense(150) + Dense(100) + softmax",
+    "entrada_modelo": "20 pasos x 9 variables",
+    "tipo_modelo": "LSTM",
+    "epochs_configuradas": 120,
+    "epochs_ejecutadas": 26,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "early_stopping": true,
+    "early_stopping_monitor": "val_loss",
+    "early_stopping_patience": 15,
+    "restore_best_weights": true,
+    "reduce_lr_on_plateau": true,
+    "reduce_lr_patience": 7,
+    "min_lr": 1e-05
+}

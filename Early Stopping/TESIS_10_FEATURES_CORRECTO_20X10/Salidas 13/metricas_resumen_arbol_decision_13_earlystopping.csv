@@ -1,0 +1,2 @@
+modelo,features,timesteps,accuracy,precision_macro,recall_macro,f1_macro,precision_weighted,recall_weighted,f1_weighted,roc_auc_ovr_macro,roc_auc_ovo_macro,auc_GR,auc_SD,auc_GI,cm_norm_00,cm_norm_01,cm_norm_02,cm_norm_10,cm_norm_11,cm_norm_12,cm_norm_20,cm_norm_21,cm_norm_22
+Arbol de Decision 13 caracteristicas con Early Stopping,13,20,0.44,0.48165148228874893,0.44,0.43663676976192534,0.4816514822887489,0.44,0.4366367697619252,0.615825,0.615825,0.6506,0.5353,0.661575,0.295,0.455,0.25,0.14,0.475,0.385,0.035,0.415,0.55

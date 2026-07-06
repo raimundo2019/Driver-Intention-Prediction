@@ -1,0 +1,24 @@
+{
+    "modelo": "Regresion Logistica",
+    "datos": {
+        "X": "dato_expandido.csv",
+        "Y": "salida_expandido.csv",
+        "features": 9,
+        "timesteps": 20
+    },
+    "split": {
+        "test_size": 0.2,
+        "val_size_from_trainval": 0.2,
+        "seed": 50
+    },
+    "salida": "softmax para tres clases excluyentes",
+    "loss": "categorical_crossentropy en redes neuronales",
+    "entrada_modelo": "20x9 aplanado a 180 variables",
+    "regularizacion": "L2 por defecto en LogisticRegression de scikit-learn",
+    "C_seleccionado": 0.004641588833612777,
+    "mejor_iteracion": 6,
+    "early_stopping": true,
+    "criterio_early_stopping": "detener busqueda de C si val_loss no mejora durante PATIENCE iteraciones",
+    "patience": 6,
+    "nota": "En regresion logistica no existen epocas como en redes neuronales; las curvas se construyen variando C."
+}

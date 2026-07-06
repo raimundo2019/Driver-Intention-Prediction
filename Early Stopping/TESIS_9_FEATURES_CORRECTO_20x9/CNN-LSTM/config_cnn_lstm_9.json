@@ -1,0 +1,39 @@
+{
+    "modelo": "CNN-LSTM 9 caracteristicas",
+    "datos": {
+        "X": "dato_expandido.csv",
+        "Y": "salida_expandido.csv",
+        "features": 9,
+        "timesteps": 20
+    },
+    "split": {
+        "test_size": 0.2,
+        "val_size_from_trainval": 0.2,
+        "seed": 50
+    },
+    "salida": "softmax para tres clases excluyentes",
+    "loss": "categorical_crossentropy en redes neuronales",
+    "arquitectura": "Conv1D(150) + Conv1D(100) + BatchNormalization + Conv1D(64) + BatchNormalization + MaxPooling1D + LSTM(128) + LSTM(64) + Dense(64) + Dense(64) + softmax",
+    "entrada_modelo": "20 pasos x 9 variables",
+    "tipo_modelo": "Hibrido CNN-LSTM",
+    "epochs_maximas": 120,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "early_stopping": {
+        "monitor": "val_loss",
+        "patience": 15,
+        "min_delta": 0.0001,
+        "restore_best_weights": true
+    },
+    "reduce_lr_on_plateau": {
+        "monitor": "val_loss",
+        "factor": 0.5,
+        "patience": 6,
+        "min_lr": 1e-05
+    },
+    "graficos_entrenamiento": [
+        "accuracy_cnn_lstm_9.png",
+        "loss_cnn_lstm_9.png",
+        "training_curves_cnn_lstm_9.png"
+    ]
+}

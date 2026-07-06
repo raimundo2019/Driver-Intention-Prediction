@@ -1,0 +1,2 @@
+modelo,features,timesteps,accuracy,precision_macro,recall_macro,f1_macro,precision_weighted,recall_weighted,f1_weighted,roc_auc_ovr_macro,roc_auc_ovo_macro,auc_GR,auc_SD,auc_GI,cm_norm_00,cm_norm_01,cm_norm_02,cm_norm_10,cm_norm_11,cm_norm_12,cm_norm_20,cm_norm_21,cm_norm_22
+CNN-RNN mejorado 13 caracteristicas con Early Stopping,13,20,0.7783333333333333,0.7734214947913579,0.7783333333333333,0.7693953726549289,0.7734214947913578,0.7783333333333333,0.7693953726549289,0.90915,0.90915,0.9205125,0.837275,0.9696625,0.825,0.15,0.025,0.27,0.555,0.175,0.0,0.045,0.955

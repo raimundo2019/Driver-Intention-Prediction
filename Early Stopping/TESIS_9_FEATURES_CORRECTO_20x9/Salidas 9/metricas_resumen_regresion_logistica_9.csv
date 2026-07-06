@@ -1,0 +1,2 @@
+modelo,features,timesteps,accuracy,precision_macro,recall_macro,f1_macro,precision_weighted,recall_weighted,f1_weighted,roc_auc_ovr_macro,roc_auc_ovo_macro,auc_GR,auc_SD,auc_GI,cm_norm_00,cm_norm_01,cm_norm_02,cm_norm_10,cm_norm_11,cm_norm_12,cm_norm_20,cm_norm_21,cm_norm_22
+Regresion Logistica 9 caracteristicas,9,20,0.6216666666666667,0.6243384019399585,0.6216666666666667,0.6203875993559126,0.6243384019399585,0.6216666666666667,0.6203875993559126,0.7939791666666668,0.7939791666666668,0.7930125,0.7757375000000001,0.8131875,0.545,0.21,0.245,0.175,0.63,0.195,0.11,0.2,0.69

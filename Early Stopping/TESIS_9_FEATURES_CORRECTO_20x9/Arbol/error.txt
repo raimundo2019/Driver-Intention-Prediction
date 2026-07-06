@@ -1,0 +1,20 @@
+X reconstruido: (3000, 20, 9)
+Y: (3000, 3)
+Distribucion de clases: (array([0, 1, 2]), array([1000, 1000, 1000]))
+Train: (1920, 20, 9) (1920, 3)
+Val:   (480, 20, 9) (480, 3)
+Test:  (600, 20, 9) (600, 3)
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/idlelib/run.py", line 578, in runcode
+    exec(code, self.locals)
+  File "/media/ray/Disco nuevo ssd/Guda 2026/Tesis 2026/Masson tesis/Trabajo 8/capitulo 5/Early Stopping/TESIS_9_FEATURES_CORRECTO_20x9/Arbol/arbol_decision_9.py", line 213, in <module>
+    main()
+  File "/media/ray/Disco nuevo ssd/Guda 2026/Tesis 2026/Masson tesis/Trabajo 8/capitulo 5/Early Stopping/TESIS_9_FEATURES_CORRECTO_20x9/Arbol/arbol_decision_9.py", line 86, in main
+    train_loss.append(log_loss(y_train, p_train, labels=[0, 1, 2]))
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/utils/_param_validation.py", line 214, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py", line 2882, in log_loss
+    transformed_labels = lb.transform(y_true)
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/preprocessing/_label.py", line 355, in transform
+    raise ValueError("The object was not fitted with multilabel input.")
+ValueError: The object was not fitted with multilabel input.

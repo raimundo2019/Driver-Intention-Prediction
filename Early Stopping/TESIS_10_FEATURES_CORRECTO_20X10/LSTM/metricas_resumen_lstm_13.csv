@@ -1,0 +1,2 @@
+modelo,features,timesteps,accuracy,precision_macro,recall_macro,f1_macro,precision_weighted,recall_weighted,f1_weighted,roc_auc_ovr_macro,roc_auc_ovo_macro,auc_GR,auc_SD,auc_GI,cm_norm_00,cm_norm_01,cm_norm_02,cm_norm_10,cm_norm_11,cm_norm_12,cm_norm_20,cm_norm_21,cm_norm_22
+LSTM 13 caracteristicas con Early Stopping,13,20,0.7666666666666667,0.7612848123162084,0.7666666666666666,0.7594295444870157,0.7612848123162083,0.7666666666666667,0.7594295444870157,0.9178250000000001,0.9178250000000001,0.928875,0.8555375000000001,0.9690625,0.795,0.165,0.04,0.23,0.57,0.2,0.0,0.065,0.935

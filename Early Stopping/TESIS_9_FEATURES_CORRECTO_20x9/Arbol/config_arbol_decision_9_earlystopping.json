@@ -1,0 +1,25 @@
+{
+    "modelo": "Arbol de Decision 9 caracteristicas con Early Stopping",
+    "datos": {
+        "X": "dato_expandido.csv",
+        "Y": "salida_expandido.csv",
+        "features": 9,
+        "timesteps": 20
+    },
+    "split": {
+        "test_size": 0.2,
+        "val_size_from_trainval": 0.2,
+        "seed": 50
+    },
+    "salida": "softmax para tres clases excluyentes",
+    "loss": "categorical_crossentropy en redes neuronales",
+    "entrada_modelo": "20x9 aplanado a 180 variables",
+    "epochs_etapas_configuradas": 80,
+    "epochs_etapas_ejecutadas": 12,
+    "patience": 10,
+    "min_delta": 0.0001,
+    "best_depth": 2,
+    "best_val_loss": 1.0806035839978965,
+    "criterio_grafico": "max_depth creciente de 1 a EPOCHS; un arbol no entrena por epocas reales",
+    "early_stopping": true
+}

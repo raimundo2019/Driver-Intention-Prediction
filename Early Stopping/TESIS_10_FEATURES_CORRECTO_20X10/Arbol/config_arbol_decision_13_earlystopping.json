@@ -1,0 +1,25 @@
+{
+    "modelo": "Arbol de Decision 13 caracteristicas con Early Stopping",
+    "datos": {
+        "X": "dato_expandido_con_entropia_ruido.csv",
+        "Y": "salida_expandido.csv",
+        "features": 13,
+        "timesteps": 20
+    },
+    "split": {
+        "test_size": 0.2,
+        "val_size_from_trainval": 0.2,
+        "seed": 50
+    },
+    "entrada_modelo": "20x13 aplanado a 260 variables",
+    "archivo_entrada": "dato_expandido_con_entropia_ruido.csv",
+    "archivo_salida": "salida_expandido.csv",
+    "epochs_etapas_configuradas": 80,
+    "epochs_etapas_ejecutadas": 13,
+    "patience": 10,
+    "min_delta": 0.0001,
+    "best_depth": 3,
+    "best_val_loss": 1.0359274560686607,
+    "criterio_grafico": "max_depth creciente de 1 a EPOCHS; un arbol no entrena por epocas reales",
+    "early_stopping": true
+}

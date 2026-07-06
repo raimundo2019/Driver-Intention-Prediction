@@ -1,0 +1,2 @@
+modelo,features,timesteps,accuracy,precision_macro,recall_macro,f1_macro,precision_weighted,recall_weighted,f1_weighted,roc_auc_ovr_macro,roc_auc_ovo_macro,auc_GR,auc_SD,auc_GI,cm_norm_00,cm_norm_01,cm_norm_02,cm_norm_10,cm_norm_11,cm_norm_12,cm_norm_20,cm_norm_21,cm_norm_22
+Regresion Logistica 13 caracteristicas con Early Stopping,13,20,0.75,0.754355058296056,0.75,0.7492478324980109,0.754355058296056,0.75,0.7492478324980106,0.8984874999999999,0.8984874999999999,0.9025749999999999,0.8307125,0.962175,0.66,0.275,0.065,0.165,0.71,0.125,0.005,0.115,0.88

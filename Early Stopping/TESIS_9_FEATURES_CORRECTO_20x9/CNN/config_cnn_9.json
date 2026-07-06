@@ -1,0 +1,28 @@
+{
+    "modelo": "CNN 9 caracteristicas",
+    "datos": {
+        "X": "dato_expandido.csv",
+        "Y": "salida_expandido.csv",
+        "features": 9,
+        "timesteps": 20
+    },
+    "split": {
+        "test_size": 0.2,
+        "val_size_from_trainval": 0.2,
+        "seed": 50
+    },
+    "salida": "softmax para tres clases excluyentes",
+    "loss": "categorical_crossentropy en redes neuronales",
+    "arquitectura": "Conv1D + MaxPooling1D + Dropout + Conv1D + GlobalAveragePooling1D + Dense + Dropout + softmax",
+    "early_stopping": {
+        "monitor": "val_loss",
+        "patience": 15,
+        "min_delta": 0.0001,
+        "restore_best_weights": true
+    },
+    "graficos_entrenamiento": [
+        "accuracy_cnn_9.png",
+        "loss_cnn_9.png",
+        "training_curves_cnn_9.png"
+    ]
+}

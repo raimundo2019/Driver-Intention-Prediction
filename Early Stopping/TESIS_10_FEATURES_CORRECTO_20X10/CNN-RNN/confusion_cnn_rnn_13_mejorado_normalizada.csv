@@ -1,0 +1,4 @@
+,Pred_GR,Pred_SD,Pred_GI
+True_GR,0.825,0.15,0.025
+True_SD,0.27,0.555,0.175
+True_GI,0.0,0.045,0.955

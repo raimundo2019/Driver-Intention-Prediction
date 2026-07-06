@@ -1,0 +1,29 @@
+{
+    "modelo": "CNN-LSTM 13 caracteristicas con Early Stopping",
+    "datos": {
+        "X": "dato_expandido_con_entropia_ruido.csv",
+        "Y": "salida_expandido.csv",
+        "features": 13,
+        "timesteps": 20
+    },
+    "split": {
+        "test_size": 0.2,
+        "val_size_from_trainval": 0.2,
+        "seed": 50
+    },
+    "salida": "softmax para tres clases excluyentes",
+    "loss": "categorical_crossentropy en redes neuronales",
+    "arquitectura": "Conv1D(150) + Conv1D(100) + BatchNormalization + Conv1D(64) + BatchNormalization + MaxPooling1D + LSTM(128) + LSTM(64) + Dense(100) + Dense(50) + softmax",
+    "entrada_modelo": "20 pasos x 13 variables",
+    "tipo_modelo": "Hibrido CNN-LSTM",
+    "archivo_entrada": "dato_expandido_con_entropia_ruido.csv",
+    "archivo_salida": "salida_expandido.csv",
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "epochs_configuradas": 120,
+    "epochs_ejecutadas": 19,
+    "patience": 15,
+    "min_delta": 0.0001,
+    "early_stopping": true,
+    "restore_best_weights": true
+}

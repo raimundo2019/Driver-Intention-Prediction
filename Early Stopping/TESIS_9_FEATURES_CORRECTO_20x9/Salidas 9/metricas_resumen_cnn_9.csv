@@ -1,0 +1,2 @@
+modelo,features,timesteps,accuracy,precision_macro,recall_macro,f1_macro,precision_weighted,recall_weighted,f1_weighted,roc_auc_ovr_macro,roc_auc_ovo_macro,auc_GR,auc_SD,auc_GI,cm_norm_00,cm_norm_01,cm_norm_02,cm_norm_10,cm_norm_11,cm_norm_12,cm_norm_20,cm_norm_21,cm_norm_22
+CNN 9 caracteristicas,9,20,0.5566666666666666,0.559761194071303,0.5566666666666666,0.554458901083882,0.559761194071303,0.5566666666666666,0.554458901083882,0.748075,0.748075,0.7547500000000001,0.7165750000000002,0.7729000000000001,0.58,0.165,0.255,0.245,0.46,0.295,0.205,0.165,0.63

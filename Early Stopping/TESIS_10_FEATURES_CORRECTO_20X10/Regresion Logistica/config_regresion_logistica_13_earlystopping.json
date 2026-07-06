@@ -1,0 +1,27 @@
+{
+    "modelo": "Regresion Logistica 13 caracteristicas con Early Stopping",
+    "datos": {
+        "X": "dato_expandido_con_entropia_ruido.csv",
+        "Y": "salida_expandido.csv",
+        "features": 13,
+        "timesteps": 20
+    },
+    "split": {
+        "test_size": 0.2,
+        "val_size_from_trainval": 0.2,
+        "seed": 50
+    },
+    "entrada_modelo": "20x13 aplanado a 260 variables",
+    "archivo_entrada": "dato_expandido_con_entropia_ruido.csv",
+    "archivo_salida": "salida_expandido.csv",
+    "epochs_configuradas": 120,
+    "epochs_ejecutadas": 16,
+    "patience": 15,
+    "min_delta": 0.0001,
+    "best_epoch": 1,
+    "best_val_loss": 0.7406071226678355,
+    "solver": "saga",
+    "warm_start": true,
+    "max_iter_por_epoca": 1,
+    "early_stopping": true
+}

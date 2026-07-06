@@ -1,0 +1,2 @@
+modelo,features,timesteps,accuracy,precision_macro,recall_macro,f1_macro,precision_weighted,recall_weighted,f1_weighted,roc_auc_ovr_macro,roc_auc_ovo_macro,auc_GR,auc_SD,auc_GI,cm_norm_00,cm_norm_01,cm_norm_02,cm_norm_10,cm_norm_11,cm_norm_12,cm_norm_20,cm_norm_21,cm_norm_22
+CNN-LSTM 9 caracteristicas,9,20,0.5033333333333333,0.5268923312296806,0.5033333333333333,0.48476698993861467,0.5268923312296806,0.5033333333333333,0.48476698993861467,0.7083708333333333,0.7083708333333333,0.6951375,0.6906249999999999,0.7393500000000001,0.44,0.115,0.445,0.265,0.295,0.44,0.135,0.09,0.775
